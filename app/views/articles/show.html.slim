@@ -1,0 +1,6 @@
+h1 = @article.title
+b = @article.short_intro
+p = simple_format @article.content
+= link_to articles_path, class: 'btn btn-sm btn-warning' do
+  span.glyphicon.glyphicon-arrow-left
+  span Quay về

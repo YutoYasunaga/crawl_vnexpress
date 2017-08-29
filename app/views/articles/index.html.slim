@@ -1,0 +1,11 @@
+.page-header
+  = link_to reload_path, class: 'btn btn-lg btn-success' do 
+    span.glyphicon.glyphicon-plus
+    span Cập nhật tin tức mới
+  h1 Tin tức gần đây
+
+- @articles.each do |article|
+  h2 = article.title
+  p = article.short_intro
+  = link_to 'Đọc tiếp', article
+  hr
